@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Student.css">
+    <!-- <script src="Student.js"></script> -->
+
+   <script>
+       var calcy = () =>{
+       
+       var math=document.getElementById("math").value;
+       var chem=document.getElementById("chem").value;
+       var phys=document.getElementById("phys").value;
+       var prog=document.getElementById("prog").value;
+    
+       var total=parseFloat(math)+parseFloat(chem)+parseFloat(phys)+parseFloat(prog);
+        alert("your total of 4 subjects is " + total);
+        var grade=(total/400)*100;
+        alert("your percentage is " + grade);
+       }    
+   </script>
+   </head>
+<body>
+  <div class="box">
+        <div class="student"><p>student grade</p></div>
+        <div class="form">
+        <form>
+           <input id="math" type="text" placeholder="math" value=""></input>
+          <input id="chem" type="text" placeholder="chem" value=""></input>
+            <input id="phys" type="text" placeholder="phys" value=""></input>
+         <input id="prog" type="text" placeholder="prog" value=""></input>
+       </form>
+    <button onclick="calcy()" id="showPercentage">showPercentage</button>       
+    </div>
+ </div>
+
+</body>
+</html>
